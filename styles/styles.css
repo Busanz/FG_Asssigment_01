@@ -21,7 +21,13 @@ h1 {
   letter-spacing: 1px;
 }
 
+a {
+  text-decoration: none;
+  color: #f3f4f0;
+  margin: 8px;
+}
 header {
+  position: fixed;
   width: 100%;
   max-width: 1440px;
 }

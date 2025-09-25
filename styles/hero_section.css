@@ -1,0 +1,18 @@
+.hero__left {
+  background-color: rgb(26, 15, 0);
+  padding: 0px 50px;
+}
+
+.hero {
+  /* background-image: url("../img/backgroundImage.jpg"); */
+
+  background-color: #010101a2;
+  background-blend-mode: multiply;
+  background-size: cover;
+  /* padding: 0px 50px; */
+  /* border: 1px solid #003e2e; */
+}
+
+.hero__right img {
+  border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bcd3f6;
+  color: #f3f4f0;
+  font-family: "Manrope", sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+}
+
+section,
+footer {
+  display: flex;
+  justify-items: center;
+  max-width: 1440px;
+  height: calc(100vh - 56px);
+  width: 100%;
+}
+
+footer {
+  height: calc(70vh - 56px);
+  background-color: pink;
+}

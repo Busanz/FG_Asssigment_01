@@ -10,10 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #bcd3f6;
+  background-color: #432a9c;
   color: #f3f4f0;
   font-family: "Manrope", sans-serif;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -26,10 +27,29 @@ a {
   color: #f3f4f0;
   margin: 8px;
 }
+
+a:hover {
+  color: #d5f505;
+  text-shadow: #c3bae3 1px 1px 10px;
+}
+
+button {
+  width: 150px;
+  padding: 12px 20px;
+  font-family: "Manrope", sans-serif;
+  border-radius: 8px;
+  border: 1px solid #d5f505;
+  font-size: 1.1rem;
+  font-weight: 200;
+  background: linear-gradient(0.5turn, #ebf8e144, #d5f50533);
+  color: white;
+}
+
 header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   max-width: 1440px;
+  top: -2px;
 }
 
 section,
@@ -37,11 +57,43 @@ footer {
   display: flex;
   justify-items: center;
   max-width: 1440px;
-  height: calc(100vh - 56px);
+  height: 100vh;
   width: 100%;
+}
+
+.hero {
+  height: calc(100vh - 56px);
 }
 
 footer {
   height: calc(70vh - 56px);
   background-color: pink;
+}
+
+@media screen and (min-width: 769px) {
+  section,
+  footer {
+    display: flex;
+    justify-items: center;
+    max-width: 1440px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  button {
+    border: 0.5px solid #d5f505;
+    /* border: 0; */
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 200;
+  }
 }

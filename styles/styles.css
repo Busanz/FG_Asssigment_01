@@ -20,6 +20,7 @@ body {
 h1 {
   font-weight: 200;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 a {
@@ -34,14 +35,14 @@ a:hover {
 }
 
 button {
+  border: 0;
   width: 150px;
   padding: 12px 20px;
   font-family: "Manrope", sans-serif;
   border-radius: 8px;
-  border: 1px solid #d5f505;
   font-size: 1.1rem;
   font-weight: 200;
-  background: linear-gradient(0.5turn, #ebf8e144, #d5f50533);
+  background: linear-gradient(0.5turn, #432a9c44, #d5f50533);
   color: white;
 }
 
@@ -81,8 +82,7 @@ footer {
   }
 
   button {
-    border: 0.5px solid #d5f505;
-    /* border: 0; */
+    border: 0;
     font-size: 1.1rem;
     font-weight: 300;
   }

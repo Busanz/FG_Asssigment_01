@@ -4,7 +4,6 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 10px 0;
   gap: 20px;
@@ -36,12 +35,23 @@
   padding-bottom: 50px;
 }
 
-img {
+.hero__right {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 12px 8px 34px;
   width: 100%;
 }
 
-.hero__right {
-  width: 100%;
+.hero__name {
+  color: #d5f505;
+  font-weight: 400;
+}
+
+.hero__description {
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding-right: 24px;
+  line-height: 1.75rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -69,6 +79,13 @@ img {
     display: flex;
     gap: 30px;
     padding-bottom: 100px;
+  }
+
+  .hero__description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-right: 24px;
+    line-height: 2rem;
   }
 }
 

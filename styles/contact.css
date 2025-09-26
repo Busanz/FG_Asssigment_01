@@ -4,8 +4,6 @@
   padding: 20px 0;
   /* gap: 20px; */
   height: calc(100vh - 64px);
-
-  /* background-color: violet; */
   width: 100%;
 }
 
@@ -13,8 +11,6 @@
   text-align: left;
   padding-left: 36px;
   width: 100%;
-  /* white-space: nowrap; */
-  /* background-color: rgb(129, 89, 169); */
 }
 
 .title_char {
@@ -30,32 +26,32 @@
   margin: 0 auto;
   width: 100%;
   height: calc(100% - 43px);
+  font-family: "Manrope", sans-serif;
 }
 
 .contact_form {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  flex-grow: 5;
+  flex-grow: 1;
   padding: 40px 50px 0 36px;
   width: 100%;
-  /* height: 60%; */
-  /* background-color: rgb(76, 163, 45); */
   gap: 18px;
 }
 
 .contact_form label {
   font-size: 1.3rem;
   font-weight: 200;
+  letter-spacing: 2px;
 }
 
 .contact_form input {
   padding: 10px 4px;
-  height: 36px;
+  height: 40px;
   font-size: 1.2rem;
   font-weight: 100;
-  border-radius: 10px;
   border: none;
+  letter-spacing: 2px;
 }
 
 .form__input_name,
@@ -66,22 +62,33 @@
   flex-direction: column;
 }
 .form__submit_info {
-  width: 150px;
+  width: 180px;
   margin-top: 24px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 1.2rem;
-  font-weight: 100;
+
+  font-weight: 300;
+  background: var(--color-primary);
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form__submit_info:hover {
+  background-color: var(--text-color);
+  font-weight: 400;
 }
 
 .contact__info {
   display: flex;
   height: 30%;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-around;
   font-weight: 100;
   letter-spacing: 1.5px;
-  /* padding: 30px; */
-  background-color: rgb(79, 60, 34);
+  padding: 30px 36px;
 }
 
 .contact__info p {
@@ -98,21 +105,6 @@
 .info_address:nth-of-type(2) {
   margin: 8px 0;
 }
-
-/* 
-
-
-.info_address {
-  padding: 0 15px;
-  margin: 0;
-}
-.info_address:nth-of-type(1) {
-  margin-top: 16px;
-}
-.info_address:nth-of-type(2) {
-  margin: 8px 0;
-}
-
 .info_rest {
-  padding: 0 15px;
-} */
+  padding: 0 12px;
+}

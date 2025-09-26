@@ -1,4 +1,5 @@
 :root {
+  --color-primary: #d5f505;
   --text-color: #f3f4f0;
 }
 
@@ -19,6 +20,7 @@ body {
   font-family: "Manrope", sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
+  user-select: none;
 }
 
 h1 {
@@ -36,25 +38,30 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #f3f4f0;
+  color: var(--text-color);
   margin: 8px;
 }
 
 a:hover {
-  color: rgb(213, 245, 5);
+  color: var(--color-primary);
   text-shadow: #c3bae3 1px 1px 10px;
 }
 
-button {
+.button_link {
+  display: inline-block;
   border: 0;
   width: 150px;
   padding: 12px 20px;
-  font-family: "Manrope", sans-serif;
   border-radius: 8px;
   font-size: 1.1rem;
-  font-weight: 200;
-  background: linear-gradient(0.5turn, #432a9c44, #d5f50533);
-  color: white;
+  font-weight: 300;
+  background: linear-gradient(0.5turn, #00000033, #d5f5055f);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.button_link:hover {
+  color: var(--color-primary);
 }
 
 header {
@@ -88,7 +95,7 @@ footer {
     width: 100%;
   }
 
-  button {
+  .button_link {
     border: 0;
     font-size: 1.1rem;
     font-weight: 300;
@@ -96,7 +103,7 @@ footer {
 }
 
 @media screen and (max-width: 326px) {
-  button {
+  .button_link {
     padding: 10px 20px;
     border-radius: 5px;
     border: 0;

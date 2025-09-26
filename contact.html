@@ -21,12 +21,111 @@
     <title>Buudhi-Home Page</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/hero_section.css" />
-    <link rel="stylesheet" href="./styles/portfolio_section.css" />
-    <link rel="stylesheet" href="./styles/education_section.css" />
-    <link rel="stylesheet" href="./styles/skills_section.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <title>Buddhi-contact me</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div>
+          <a href="index.html" class="navbar__logo"
+            >B<span class="navbar__logo-i">i</span></a
+          >
+        </div>
+
+        <div class="menu">
+          <div class="menu__mobile">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="56"
+              height="56"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.75"
+              stroke-linecap="square"
+              stroke-linejoin="round"
+              class="lucide lucide-menu"
+            >
+              <path d="M4 6h16" />
+              <path d="M4 12h16" />
+              <path d="M4 18h16" />
+            </svg>
+          </div>
+          <div class="menu__wrapper">
+            <a href="index.html" class="menu__item item_first">Home</a>
+            <a href="#portfolio" class="menu__item">Portfolio</a>
+            <a href="#" class="menu__item">About me</a>
+            <a href="#" class="menu__item">Contact me</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="contact__section">
+      <h1 class="contact__title">
+        Let<span class="title_char">'</span>s connect<span class="title_char">
+          &nbsp;!</span
+        >
+      </h1>
+
+      <div class="contact__wrapper">
+        <form
+          action="mailto: someone@gmail.com"
+          method="POST"
+          enctype="text/plain"
+          class="contact_form"
+        >
+          <div class="form__input_name">
+            <label for="input-name">Name</label>
+            <input
+              type="text"
+              name="input-name"
+              id="input-name"
+              placeholder="Eg: John De Silva"
+              required
+            />
+          </div>
+
+          <div class="form__input_email">
+            <label for="input_email">Email</label>
+            <input
+              type="text"
+              name="input_email"
+              id="input_email"
+              placeholder="johndesilva@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form__input_message">
+            <label for="input_message">Message</label>
+            <input
+              type="text"
+              name="input_message"
+              id="input_message"
+              placeholder="Type your message here"
+              required
+            />
+          </div>
+          <button class="form__submit_info">Submit</button>
+        </form>
+
+        <div class="contact__info">
+          <div>
+            <p class="info_address">Elinebergsplatsen 5,</p>
+            <p class="info_address">Helsingborg,</p>
+            <p class="info_address">Skåne 256 58</p>
+          </div>
+          <div class="info_rest">
+            <p class="info_mobileNumber">077-170 70 71</p>
+            <p class="info_emailAdress">johndesilva@gmail.com</p>
+            <p class="info_LinkedIn">linkedin/in/johnde</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </main> -->
+  </body>
 </html>

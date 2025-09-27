@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <title>Buddhi-contact me</title>
   </head>
-  <body>
+  <body id="contact">
     <header class="header">
       <nav class="navbar">
         <div>
@@ -57,7 +57,7 @@
             <a href="index.html" class="menu__item item_first">Home</a>
             <a href="#portfolio" class="menu__item">Portfolio</a>
             <a href="#" class="menu__item">About me</a>
-            <a href="contact.html" class="menu__item">Contact me</a>
+            <a href="contact.html" class="menu__item contact">Contact me</a>
           </div>
         </div>
       </nav>
@@ -81,7 +81,7 @@
 
       <div class="contact__wrapper">
         <form
-          action="mailto: someone@gmail.com"
+          action="mailto:buddhidesilva@gmail.com"
           method="POST"
           enctype="text/plain"
           class="contact_form"
@@ -92,8 +92,7 @@
               type="text"
               name="input-name"
               id="input-name"
-              placeholder="&nbsp;&nbsp;Eg: Buddhi De Silva"
-              required
+              placeholder="&nbsp;&nbsp;Eg:Buddhi De Silva"
             />
           </div>
 
@@ -103,20 +102,20 @@
               type="email"
               name="input_email"
               id="input_email"
-              placeholder="&nbsp;&nbsp;buddhidesilva@gmail.com"
+              placeholder="&nbsp;&nbsp;Eg:buddhidesilva@gmail.com"
               required
             />
           </div>
 
           <div class="form__input_message">
             <label for="input_message">Message</label>
-            <input
-              type="text"
-              name="input_message"
+            <textarea
               id="input_message"
-              placeholder="&nbsp;&nbsp;Type your message here"
+              name="input_message"
+              rows="5"
+              placeholder="&nbsp;Your message here"
               required
-            />
+            ></textarea>
           </div>
           <button class="form__submit_info">Submit</button>
         </form>

@@ -1,5 +1,6 @@
 :root {
   --color-primary: #d5f505;
+  --color-primary: rgb(213, 245, 5);
   --text-color: #f3f4f0;
 }
 
@@ -56,8 +57,7 @@ header {
   align-items: center;
 }
 
-section,
-footer {
+section {
   display: flex;
   justify-items: center;
   max-width: 1440px;
@@ -65,18 +65,7 @@ footer {
   width: 100%;
 }
 
-footer {
-  height: calc(70vh - 56px);
-  background-color: pink;
-}
-
 @media screen and (min-width: 769px) {
-  section,
-  footer {
-    max-width: 1440px;
-    height: 100vh;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 326px) {

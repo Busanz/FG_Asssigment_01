@@ -1,6 +1,0 @@
-<img
-            alt="Hamberger menu icon"
-            src="./img/menu.svg"
-            height="auto"
-            width="auto"
-          />

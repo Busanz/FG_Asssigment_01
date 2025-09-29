@@ -1,19 +1,19 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #432a9c;
+  display: flex;
+  justify-content: space-between;
   padding: 4px 24px;
 }
 
 .navbar__logo {
   color: #d5f505;
+  cursor: pointer;
   font-family: "Audiowide", sans-serif;
   font-style: italic;
   font-size: 2.5rem;
   padding-left: 2px;
   padding-right: 10px;
-  cursor: pointer;
 }
 
 .navbar__logo a {
@@ -27,23 +27,23 @@
 }
 
 .menu {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .menu__wrapper {
-  display: none;
   align-items: end;
-  gap: 8px;
+  background-color: #432a9c;
+  display: none;
+  flex-direction: column;
   font-size: 1.2rem;
   font-weight: 100;
-  flex-direction: column;
-  position: absolute;
-  top: 64px;
-  right: 0;
-  background-color: #432a9c;
-  width: 100%;
+  gap: 8px;
   height: calc(50vh - 56px);
+  position: absolute;
+  right: 0;
   transition: 5s;
+  top: 64px;
+  width: 100%;
 }
 
 .menu__item {
@@ -79,17 +79,15 @@
   }
 
   .menu__wrapper {
-    position: relative;
-    display: flex;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    top: auto;
-    right: auto;
     align-items: center;
     background-color: #432a9c;
-    /* border: 0.5px solid var(--color-primary);
-    border-radius: 30px; */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
   }
 
   .menu__item.item_first {

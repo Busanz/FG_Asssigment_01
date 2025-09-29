@@ -5,46 +5,46 @@
 }
 
 .contact__title {
-  text-align: left;
-  padding-left: 36px;
-  width: 100%;
-  max-width: 700px;
   align-items: center;
   justify-content: center;
+  text-align: left;
+  max-width: 700px;
+  padding-left: 36px;
+  width: 100%;
 }
 
 .title_char {
+  color: var(--color-primary);
   display: inline-block;
   font-weight: 500;
-  color: var(--color-primary);
 }
 
 .contact__desktop_image {
-  position: fixed;
-  z-index: -10;
-  top: 40%;
   left: 20%;
   opacity: 20%;
+  position: fixed;
   scale: 0.8;
+  top: 40%;
+  z-index: -10;
 }
 
 .contact__wrapper {
-  display: flex;
   align-items: start;
+  display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 700px;
   height: calc(100% - 43px);
+  max-width: 700px;
+  width: 100%;
 }
 
 .contact_form {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   flex-grow: 1;
+  gap: 12px;
+  justify-content: start;
   padding: 24px 42px 0 36px;
   width: 100%;
-  gap: 12px;
 }
 
 .contact_form label {
@@ -55,14 +55,14 @@
 
 .contact_form input,
 textarea {
+  border: none;
+  border-radius: 5px;
   display: inline-block;
-  padding: 10px 4px;
-  height: 40px;
   font-size: 1.2rem;
   font-weight: 100;
-  border: none;
+  height: 40px;
   letter-spacing: 2px;
-  border-radius: 5px;
+  padding: 10px 4px;
 }
 
 .contact_form textarea {
@@ -84,42 +84,42 @@ textarea:hover {
 .form__input_email,
 .form__input_message {
   display: flex;
-  gap: 8px;
   flex-direction: column;
+  gap: 8px;
 }
 button.form__submit_info {
-  width: 180px;
-  margin-top: 24px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  font-family: "Manrope", sans-serif;
-  font-weight: 300;
   background: var(--color-primary);
-  color: black;
-  text-align: center;
   border: 1px solid var(--color-primary);
   border-radius: 8px;
-  letter-spacing: 2px;
+  color: black;
   cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 24px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 180px;
 }
 
 .form__submit_info:hover {
   background-color: #f3f4f022;
-  font-weight: 400;
   border: 1px solid var(--color-primary);
   color: var(--text-color);
+  font-weight: 400;
   transition: 0.3s;
 }
 
 .contact__info {
   display: flex;
-  height: 30%;
   flex-direction: column;
-  justify-content: space-around;
   font-weight: 100;
+  height: 30%;
+  justify-content: space-around;
   letter-spacing: 1.5px;
-  padding: 0 36px;
   margin-bottom: 24px;
+  padding: 0 36px;
 }
 
 .contact__info p {
@@ -152,10 +152,10 @@ button.form__submit_info {
 
 @media screen and (min-width: 769px) {
   .contact__section {
-    position: relative;
-    padding: 24px 0;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    position: relative;
   }
 
   .contact__title {
@@ -169,17 +169,17 @@ button.form__submit_info {
   }
 
   .contact__desktop_image {
+    left: 0;
+    opacity: 15%;
     position: absolute;
     top: 0;
-    left: 0;
     transform: translate(40vw, 45vh);
-    opacity: 15%;
     scale: 0.9;
   }
 
   .contact_form {
-    padding: 40px 50px 0 36px;
     gap: 18px;
+    padding: 40px 50px 0 36px;
   }
 
   .contact_form label {
@@ -190,11 +190,11 @@ button.form__submit_info {
 
   .contact__info {
     flex-direction: row;
-    justify-content: left;
     font-weight: 300;
+    gap: 100px;
+    justify-content: left;
     letter-spacing: 1.5px;
     padding-top: 50px;
-    gap: 100px;
   }
 
   .contact__info p {
@@ -213,8 +213,8 @@ button.form__submit_info {
 
 @media screen and (max-width: 376px) {
   .contact_form {
-    padding: 24px 16px 0 16px;
     gap: 18px;
+    padding: 24px 16px 0 16px;
   }
 
   .contact__info {

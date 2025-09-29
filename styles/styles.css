@@ -1,6 +1,5 @@
 :root {
   --color-primary: #d5f505;
-  --color-primary: rgb(213, 245, 5);
   --text-color: #f3f4f0;
 }
 
@@ -13,12 +12,11 @@ html {
 }
 
 body {
-  display: flex;
-  /* position: relative; */
-  flex-direction: column;
   align-items: center;
   background-color: #432a9c;
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
   font-family: "Manrope", sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
@@ -35,14 +33,14 @@ h2,
 h3 {
   font-weight: 400;
   letter-spacing: 1px;
-  padding-top: 15px;
   margin: 0;
+  padding-top: 15px;
 }
 
 a {
-  text-decoration: none;
   color: var(--text-color);
   margin: 8px;
+  text-decoration: none;
 }
 
 a:hover {
@@ -51,19 +49,19 @@ a:hover {
 }
 
 header {
-  position: sticky;
-  width: 100%;
-  max-width: 1440px;
-  top: -1px;
-  background-color: #c3bae3;
   align-items: center;
+  background-color: #c3bae3;
+  max-width: 1440px;
+  position: sticky;
+  top: -1px;
+  width: 100%;
 }
 
 section {
   display: flex;
   justify-items: center;
-  max-width: 1440px;
   height: 100%;
+  max-width: 1440px;
   width: 100%;
 }
 
@@ -76,10 +74,10 @@ section {
 
 @media screen and (max-width: 326px) {
   .button_link {
-    padding: 10px 20px;
-    border-radius: 5px;
     border: 0;
+    border-radius: 5px;
     font-size: 1rem;
     font-weight: 200;
+    padding: 10px 20px;
   }
 }

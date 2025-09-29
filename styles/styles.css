@@ -74,9 +74,6 @@ section {
   color: var(--color-primary);
 }
 
-@media screen and (min-width: 769px) {
-}
-
 @media screen and (max-width: 326px) {
   .button_link {
     padding: 10px 20px;

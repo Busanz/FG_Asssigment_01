@@ -43,6 +43,7 @@
   background-color: #432a9c;
   width: 100%;
   height: calc(50vh - 56px);
+  transition: 5s;
 }
 
 .menu__item {

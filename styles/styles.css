@@ -67,7 +67,10 @@ section {
   width: 100%;
 }
 
-#home .home {
+.home_menuItem .home_menuItem,
+.portfolio_menuItem .portfolio_menuItem,
+.contact_menuItem .contact_menuItem,
+.aboutme_menuItem .aboutme_menuItem {
   color: var(--color-primary);
 }
 
